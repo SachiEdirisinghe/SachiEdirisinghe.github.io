@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachi Edirisinghe</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin-left: 260px;
+      padding: 20px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      align-items: flex-start;   /* changed */
+      gap: 24px;
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      margin-top: 0;             /* optional cleaner alignment */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 4px solid #ddd;
+    }
+
+    .hero-text h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 1.0rem;
+      color: #555;
+      margin-bottom: 15px;
+      font-weight: normal;
+    }
+
+    .hero-text p {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      max-width: 650px;
+    }
+
+    .links a {
+      text-decoration: none;
+      margin-right: 15px;
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .conf {
+      font-weight: 500;
+      color: #666; 
+    }
+
+    .conf.famous {
+      color: #444;
+      font-weight: 600;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+
+      position: fixed;
+      left: 0;
+      top: 0;
+
+      background: white;
+      padding: 30px 20px;
+
+      box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      color: #0066cc;
+    }
+   
+
+    button {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+      color: #333;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #e9e9e9;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    /* SECTION STYLE */
+    section {
+      background: white;
+      margin-top: 25px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .item {
+      margin-bottom: 25px;
+    }
+
+    .item h3 {
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .item p {
+      color: #444;
+    }
+
+    .item ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+
+    .item li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+     <!-- NAVIGATION -->
+    <nav class="sidebar">
+    <ul>
+      <li><a href="#publications">Publications</a></li>
+      <!--li><a href="#projects">Projects</a></li-->
+      <li><a href="#services">Services</a></li>
+      <li><a href="#awards">Awards</a></li>
+    </ul>
+  </nav>
+    <!-- HERO SECTION -->
+    <div class="hero">
+
+      <!-- YOUR PHOTO -->
+      <img src="photo.jpg" alt="Your Photo" class="profile-img">
+
+      <!-- YOUR DESCRIPTION -->
+      <div class="hero-text">
+        <h1>Sachi Edirisinghe</h1>
+
+        <h2>Human-Robot Interaction Researcher | Real-World Robot Deployment Studies</h2>
+
+        <p>
+          I am a human–robot interaction (HRI) researcher studying how socially interactive robots influence human behavior in public and semi-public environments. My work focuses on how people interpret and respond to robot behavior in real-world social settings, including situations involving social norms and appropriate conduct.
+          </p>
+          <p>
+            My research combines field studies, behavioral analysis, and real-world evaluations of interactive robotic systems in situated environments. I am particularly interested in designing robots that can interact naturally and appropriately in everyday public contexts.
+          </p>
+          <p>
+          I received my PhD in informatics from Kyoto University Japan in 2024.
+        </p>
+        <p>
+           I am seeking postdoctoral and faculty positions in academia, as well as research roles in industry, with a focus on robotics and human-robot interaction. I am also open to research collaborations in these areas.         
+        </p>
+
+        <!-- LINKS -->
+        <div class="links">
+           <a href="https://scholar.google.com/citations?user=Ax-5p1MAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          <a href="mailto:sachi_natasha@yahoo.com">Email</a>
+          <a href="https://orcid.org/0000-0001-9898-9918" target="_blank">ORCID</a>
+        </div>
+      </div>
+    </div>
+
+
+   
+
+
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <div class="item">
+        <h3>Journal Papers</h3>
+        <ul>
+          <li>
+            <b>Field Trial of a Shopworker Robot with Friendly Guidance and Appropriate Admonishments.</b><br>
+            <u>Sachi Edirisinghe</u>, Satoru Satake, and Takayuki Kanda <br>
+            <span class="conf famous">ACM Transactions on Human-Robot Interaction 2023</span><br>    
+            <a href="https://doi.org/10.1145/3575805" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+
+          <li>
+             <b>Field Trial of a Queue-Managing Security Guard Robot.</b><br>
+            <u>Sachi Edirisinghe</u>, Satoru Satake, Yuyi Liu, and Takayuki Kanda <br>
+            <span class="conf famous">ACM Transactions on Human-Robot Interaction 2024</span><br>    
+            <a href="https://doi.org/10.1145/3680292" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Conference Papers </h3>
+        <ul>
+          <li>
+            <b>Welcome to the Shop! Field Trial of a VLM-powered Autonomous Shop Worker Robot.</b><br>
+            <u>Sachi Edirisinghe</u>, Satoru Satake, and Takayuki Kanda<br>
+            <span class="conf famous">ACM/IEEE International Conference on Human-Robot Interaction (HRI 2026)</span><br>
+            <div class="btn-group">
+              <a href="https://dl.acm.org/doi/10.1145/3757279.3785619" target="_blank">
+              <button type="button">Paper</button>
+              </a>
+              <a href="https://dl.acm.org/doi/10.1145/3757279.3785619" target="_blank">
+              <button type="button">Video</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <b>Field trial of an autonomous shopworker robot that aims to provide friendly encouragement and exert social pressure</b><br>
+            <u>Sachi Edirisinghe</u>, Satoru Satake, Dražen Brščić, Yuyi Liu, and Takayuki Kanda <br>
+            <span class="conf famous">ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024)</span><br>    
+            <a href="https://doi.org/10.1145/3610977.3635007" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+          <li>
+            <b>Enhancing overall object placement by understanding uncertain spatial and qualitative distance information in user commands</b><br>
+            <u>Sachi Edirisinghe</u>, MA Viraj J. Muthugala, HP Chapa Sirithunge, A. G. Buddhika, and P. Jayasekara.  <br>
+            <span class="conf famous">IEEE International Conference on Robotics and Automation (ICRA 2018)</span><br>    
+            <a href="https://doi.org/10.1109/ICRA.2018.8460624" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+          <li>
+            <b>Use of autobiographical memory for enhancing adaptive hri in multi-user domestic environment</b><br>
+            <u>Sachi Edirisinghe</u>, and A. G. Buddhika P. Jayasekara.  <br>
+            <span class="conf">IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN 2018)</span><br>    
+            <a href="https://doi.org/10.1109/ROMAN.2018.8525689" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+          <li>
+            <b>Application of robot autobiographical memory in long-term human-robot social interactions</b><br>
+            <u>Sachi Edirisinghe</u>, M. A. V. J. Muthugala, and A. G. B. P. Jayasekara<br>
+            <span class="conf">IEEE International Conference on Electrical Engineering (EECon 2018)</span><br>    
+            <a href="https://doi.org/10.1109/EECon.2018.8540993" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+          <li>
+            <b>Development of an interactive service robot arm for object manipulation</b><br>
+            Bandara, HM Ravindu T.,<u>Sachi Edirisinghe</u>, B. L. P. M. Balasooriya, and AG Buddhika P. Jayasekara<br>
+            <span class="conf">IEEE International Conference on Industrial and Information Systems (ICIIS 2017)</span><br>    
+            <a href="https://doi.org/10.1109/ICIINFS.2017.8300424" target="_blank">
+              <button type="button">Paper</button>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <!--section id="projects">
+      <h2>Projects</h2>
+
+      <div class="item">
+        <h3>Social Robot Deployment Project</h3>
+        <p>
+          Briefly explain the project, what you built,
+          and what research problem or insight it explored.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Human-Robot Interaction Study</h3>
+        <p>
+          Add another project description here.
+        </p>
+      </div>
+    </section -->
+
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="item">
+        <h3>Program Committee Service</h3>
+        <ul>
+          <li>
+            Area Chair - Late-Breaking Reports Track, ACM/IEEE International Conference on Human-Robot Interaction (HRI 2026)          </li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>Reviewer</h3>
+        <ul>
+          <li>
+            ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024, HRI 2025, HRI 2026)
+          </li>
+        <li>
+           International Conference on Social Robotics (ICSR 2024)
+        </li>
+        <li>
+          International Conference on Human-Agent Interaction (HAI 2025)
+        </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Student Volunteer</h3>
+        <ul>
+          <li>
+            2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2022)
+        </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <h2>Awards & Scholarships</h2>
+
+      <div class="item">
+        <h3>Japanese Government (MEXT) Scholarship</h3>
+        <p>
+      Fully funded doctoral scholarship for international students,
+      awarded through Kyoto University, Japan (2020–2023).
+        </p>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Sachi Edirisinghe</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
